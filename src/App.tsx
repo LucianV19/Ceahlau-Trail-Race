@@ -9,7 +9,8 @@ import Registration from './pages/Registration';
 import RegistrationForm from './pages/RegistrationForm';
 
 export default function App() {
-  const basename = import.meta.env.MODE === 'production' ? '/Ceahlau-Trail-Race' : '/';
+  // Use vite's BASE_URL for consistent routing in both dev and production
+  const basename = import.meta.env.BASE_URL;
   
   return (
     <Router basename={basename}>
