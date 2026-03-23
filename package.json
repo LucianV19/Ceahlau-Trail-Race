@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",

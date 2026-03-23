@@ -1,24 +1,18 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig, loadEnv} from 'vite';
+import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
-  return {
-    base: '/Ceahlau-Trail-Race/',
-    plugins: [react(), tailwindcss()],
-    define: {
-      'process.env.NODE_ENV': JSON.stringify('production'),
+export default defineConfig({
+  base: '/Ceahlau-Trail-Race/',
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '.'),
     },
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
-      },
-    },
-    build: {
-      target: 'esnext',
-      minify: 'terser',
-      outDir: 'dist',
-    },
-  };
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+  },
 });
