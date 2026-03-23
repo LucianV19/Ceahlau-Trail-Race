@@ -108,7 +108,7 @@ export default function Layout() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="/logo.png" 
+                src={logo}
                 alt="Ceahlău Trail Race" 
                 className="h-12 md:h-16 lg:h-20 w-auto object-contain"
                 style={{ mixBlendMode: 'screen' }}
