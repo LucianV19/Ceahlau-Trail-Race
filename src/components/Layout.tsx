@@ -2,7 +2,6 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { Menu, X, Mountain, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import clsx from 'clsx';
-import logo from '/logo.png';
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +23,7 @@ export default function Layout() {
             <div className="flex items-center">
               <Link to="/" className="flex items-center gap-2">
                 <img 
-                  src={logo}
+                  src="/Ceahlau-Trail-Race/logo.png"
                   alt="Ceahlău Trail Race" 
                   className="h-12 md:h-16 lg:h-20 w-auto object-contain"
                   style={{ mixBlendMode: 'screen' }}
@@ -108,7 +107,7 @@ export default function Layout() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src={logo}
+                src="/Ceahlau-Trail-Race/logo.png"
                 alt="Ceahlău Trail Race" 
                 className="h-12 md:h-16 lg:h-20 w-auto object-contain"
                 style={{ mixBlendMode: 'screen' }}
