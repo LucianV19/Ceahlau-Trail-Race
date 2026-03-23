@@ -9,8 +9,8 @@ import Registration from './pages/Registration';
 import RegistrationForm from './pages/RegistrationForm';
 
 export default function App() {
-  // Use vite's BASE_URL for consistent routing in both dev and production
-  const basename = import.meta.env.BASE_URL;
+  // GitHub Pages base path - fixed for production deployment
+  const basename = '/Ceahlau-Trail-Race/';
   
   return (
     <Router basename={basename}>
