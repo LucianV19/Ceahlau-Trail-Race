@@ -9,8 +9,10 @@ import Registration from './pages/Registration';
 import RegistrationForm from './pages/RegistrationForm';
 
 export default function App() {
+  const basename = import.meta.env.MODE === 'production' ? '/Ceahlau-Trail-Race' : '/';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
